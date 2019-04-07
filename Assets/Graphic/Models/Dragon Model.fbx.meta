@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3fd80404506c6734282c368b3d3b36f0
+guid: 5c658df0d8d544b4c860c0ad70993a2a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Chest
+    100000: Chest
+    100002: //RootNode
     100004: DragonBoar
     100006: Head
     100008: Jaw1
@@ -46,8 +46,8 @@ ModelImporter:
     100080: Tongue3
     100082: UpperMouth1
     100084: UpperMouth2
-    400000: //RootNode
-    400002: Chest
+    400000: Chest
+    400002: //RootNode
     400004: DragonBoar
     400006: Head
     400008: Jaw1
@@ -90,8 +90,8 @@ ModelImporter:
     400082: UpperMouth1
     400084: UpperMouth2
     4300000: DragonBoar
-    7400000: Basic Attack
     9500000: //RootNode
+    11100000: //RootNode
     13700000: DragonBoar
   externalObjects: {}
   materials:
@@ -120,121 +120,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Basic Attack
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 40
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: DragonBoar
-        weight: 1
-      - path: Root
-        weight: 1
-      - path: Root/joint5
-        weight: 1
-      - path: Root/joint5/joint6
-        weight: 1
-      - path: Root/joint5/joint6/joint7
-        weight: 1
-      - path: Root/joint5/joint6/joint7/joint8
-        weight: 1
-      - path: Root/L_UpperLeg
-        weight: 1
-      - path: Root/L_UpperLeg/L_LowerLeg
-        weight: 1
-      - path: Root/L_UpperLeg/L_LowerLeg/L_Feet
-        weight: 1
-      - path: Root/L_UpperLeg/L_LowerLeg/L_Feet/L_Toes
-        weight: 1
-      - path: Root/R_UpperReg
-        weight: 1
-      - path: Root/R_UpperReg/R_RowerReg
-        weight: 1
-      - path: Root/R_UpperReg/R_RowerReg/R_Feet
-        weight: 1
-      - path: Root/R_UpperReg/R_RowerReg/R_Feet/R_Toes
-        weight: 1
-      - path: Root/Spine1
-        weight: 1
-      - path: Root/Spine1/Chest
-        weight: 1
-      - path: Root/Spine1/Chest/Head
-        weight: 1
-      - path: Root/Spine1/Chest/Head/Jaw1
-        weight: 1
-      - path: Root/Spine1/Chest/Head/Jaw1/Jaw2
-        weight: 1
-      - path: Root/Spine1/Chest/Head/Jaw1/Jaw2/Jaw3
-        weight: 1
-      - path: Root/Spine1/Chest/Head/L_Horn1
-        weight: 1
-      - path: Root/Spine1/Chest/Head/L_Horn1/L_Horn2
-        weight: 1
-      - path: Root/Spine1/Chest/Head/R_Horn1
-        weight: 1
-      - path: Root/Spine1/Chest/Head/R_Horn1/R_Horn2
-        weight: 1
-      - path: Root/Spine1/Chest/Head/Tongue1
-        weight: 1
-      - path: Root/Spine1/Chest/Head/Tongue1/Tongue2
-        weight: 1
-      - path: Root/Spine1/Chest/Head/Tongue1/Tongue2/Tongue3
-        weight: 1
-      - path: Root/Spine1/Chest/Head/UpperMouth1
-        weight: 1
-      - path: Root/Spine1/Chest/Head/UpperMouth1/L_LowerEye
-        weight: 1
-      - path: Root/Spine1/Chest/Head/UpperMouth1/L_UpperEye
-        weight: 1
-      - path: Root/Spine1/Chest/Head/UpperMouth1/R_LowerEye
-        weight: 1
-      - path: Root/Spine1/Chest/Head/UpperMouth1/R_UpperEye
-        weight: 1
-      - path: Root/Spine1/Chest/Head/UpperMouth1/UpperMouth2
-        weight: 1
-      - path: Root/Spine1/Chest/L_UpperArm
-        weight: 1
-      - path: Root/Spine1/Chest/L_UpperArm/L_LowerArm
-        weight: 1
-      - path: Root/Spine1/Chest/L_UpperArm/L_LowerArm/L_Hand
-        weight: 1
-      - path: Root/Spine1/Chest/L_UpperArm/L_LowerArm/L_Hand/L_Fingers
-        weight: 1
-      - path: Root/Spine1/Chest/R_UpperArm
-        weight: 1
-      - path: Root/Spine1/Chest/R_UpperArm/R_RowerArm
-        weight: 1
-      - path: Root/Spine1/Chest/R_UpperArm/R_RowerArm/R_Hand
-        weight: 1
-      - path: Root/Spine1/Chest/R_UpperArm/R_RowerArm/R_Hand/R_Fingers
-        weight: 1
-      - path: Root_CTRL
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -269,8 +155,8 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  importAnimation: 1
-  copyAvatar: 1
+  importAnimation: 0
+  copyAvatar: 0
   humanDescription:
     serializedVersion: 2
     human: []
@@ -501,8 +387,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 0
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 5c658df0d8d544b4c860c0ad70993a2a,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
