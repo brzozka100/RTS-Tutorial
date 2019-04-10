@@ -3,19 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Unit : MonoBehaviour
 {
     const string ANIMATOR_SPEED = "Speed",
         ANIMATOR_ALIVE = "Alive",
         ANIMATOR_ATTACK = "Attack";
 
+    public float HealthPercent { get { return hp / hpMax; } }
+
     public Transform target;
+
+    [SerializeField]
+    float hp, hpMax = 100;
+    [SerializeField]
+    GameObject hpBarPrefab;
+
     NavMeshAgent nav;
     Animator animator;
+
     private void Awake()
     {
         nav = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        hp = hpMax;
+        Instantiate(hpBarPrefab, transform);
     }
     
 
@@ -34,5 +45,6 @@ public class NewBehaviourScript : MonoBehaviour
         speedVector.y = 0;
         float speed = speedVector.magnitude;
         animator.SetFloat(ANIMATOR_SPEED, speed);
+        animator.SetBool(ANIMATOR_ALIVE, hp > 0);
     }
 }
