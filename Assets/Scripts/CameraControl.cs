@@ -17,6 +17,7 @@ public class CameraControl : MonoBehaviour
     Vector2 mousePos, mousePosScreen, keyboardInput, mouseScroll;
     bool isCursorInGameScreen;
     Rect selectionRect, boxRect;
+    List<Unit> selectedUnits = new List<Unit>();
 
 
     private void Awake()
@@ -91,9 +92,37 @@ public class CameraControl : MonoBehaviour
             boxRect = AbsRect(selectionRect);
             selectionBox.anchoredPosition = boxRect.position;
             selectionBox.sizeDelta = boxRect.size;
+            UpdateSelecting();
         }
 
     }
+
+
+    void UpdateSelecting()
+    {
+        selectedUnits.Clear();
+        foreach(Unit unit in Unit.SelectableUnits)
+        {
+            if (!unit) continue;
+            var pos = unit.transform.position;
+            var posScreen = camera.WorldToScreenPoint(pos);
+            bool inRect = IsPointInRect(boxRect, posScreen);
+            (unit as ISelectable).SetSelected(inRect);
+            if (inRect)
+            {
+                selectedUnits.Add(unit);
+            }
+        }
+    }
+
+
+    bool IsPointInRect(Rect rect, Vector2 point)
+    {
+        return point.x >= rect.position.x && point.x <= (rect.position.x + rect.size.x) &&
+            point.y >= rect.position.y && point.y <= (rect.position.y + rect.size.y);
+
+    }
+
 
     Rect AbsRect(Rect rect)
     {
