@@ -216,6 +216,9 @@ MonoBehaviour:
   cameraRotationMinMax: {x: 15, y: 50}
   zoomLerp: 0
   cursorTreshold: 0.1
+  commandLayerMask:
+    serializedVersion: 2
+    m_Bits: 1792
 --- !u!1001 &394535260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -283,17 +286,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7776933783849823293, guid: e5e048e816da4f84ebe4e85e6ef0a536,
-        type: 3}
-      propertyPath: m_Speed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3104364257808514024, guid: e5e048e816da4f84ebe4e85e6ef0a536,
-        type: 3}
-      propertyPath: hpBarPrefab
-      value: 
-      objectReference: {fileID: 7679292329183562467, guid: be626017fa633e548b53d48e25d41580,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5e048e816da4f84ebe4e85e6ef0a536, type: 3}
 --- !u!1 &427857658
@@ -545,7 +537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 908696523}
   - component: {fileID: 908696522}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -714,7 +706,7 @@ GameObject:
   - component: {fileID: 1682010639}
   - component: {fileID: 1682010638}
   - component: {fileID: 1682010637}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -838,7 +830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2065060342}
   - component: {fileID: 2065060343}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Directional Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
